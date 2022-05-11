@@ -29,6 +29,10 @@ function onButtonClick() {
       answer = answer + counter
     }
     document.getElementById("answer").innerHTML = "<h5>" + answer + "</h5><br><h5>is the answer of " + text + "</h5>"
+  } else if (integer == 0) {
+    answer = 0
+    text = "nothing."
+    document.getElementById("answer").innerHTML = "<h5>" + answer + "</h5><br><h5>is the answer of " + text + "</h5>"
   } else {
     document.getElementById("answer").innerHTML = "<h5>Error: This integer is negative.</h5>"
   }
